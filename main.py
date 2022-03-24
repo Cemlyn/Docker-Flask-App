@@ -1,5 +1,5 @@
 import flask
-from gevent.pywsgi import WSGIServer
+#from gevent.pywsgi import WSGIServer
 app = flask.Flask(__name__)
 
 
@@ -31,5 +31,6 @@ def transformation():
 
 
 if __name__ == '__main__':
-    http_server = WSGIServer(('0.0.0.0:8080'), app)
-    http_server.serve_forever()
+    #http_server = WSGIServer(('0.0.0.0:8080'), app)
+    #http_server.serve_forever()
+    app.run(port=8080)

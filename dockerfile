@@ -13,6 +13,7 @@ WORKDIR /app
 # Giving permission to run the serve.sh file
 RUN chmod 577 serve.sh
 
+# Setting up the env using pip not conda here
 RUN pip install -r ./config/requirements.txt
 
 ENTRYPOINT ["./serve.sh"]

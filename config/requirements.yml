@@ -1,0 +1,8 @@
+name: flaskdemo2
+channels:
+    - conda-forge
+dependencies:
+- flask
+- numpy
+- pandas
+- scikit-learn
